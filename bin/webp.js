@@ -27,4 +27,6 @@ imagemin([path.resolve(__dirname, '../dist/images/*.{jpg,png}')], path.resolve(_
 
     console.log(`    [${i}] ${chalk.whiteBright.bold(relativeFilePath)} ${filesize(stats.size, { fullform: true })}`);
   }
+}, error => {
+  spinner.fail('Convertion error!\n', error);
 });

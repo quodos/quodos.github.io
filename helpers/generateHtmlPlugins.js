@@ -15,8 +15,13 @@ const generateHtmlPlugins = (templatesDirectory, templateExtensions = ['html']) 
     }
 
     return new HTMLWebpackPlugin({
-      filename: `../${name}.html`,
-      template: path.resolve(__dirname, `${templatesDirectory}/${name}.${extension}`)
+      filename : `../${name}.html`,
+      template : path.resolve(__dirname, `${templatesDirectory}/${name}.${extension}`),
+      minify   : {
+        removeComments        : true,
+        collapseWhitespace    : true,
+        removeAttributeQuotes : true,
+      },
     })
   })
 };

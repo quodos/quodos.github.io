@@ -55,7 +55,7 @@
     "copy:images": "cp -a src/images/. build/images/",
     "webp": "yarn webp:clean && yarn webp:convert  && yarn webp:git-add",
     "webp:clean": "rm -rf build/images/*.webp",
-    "webp:convert": "node node_modules/imagemin-cli/cli.js --plugin=webp build/images/* --out-dir=build/images",
+    "webp:convert": "node bin/webp.js",
     "webp:git-add": "git add build/images/*.webp",
     "optimize:jpg": "node node_modules/imagemin-cli/cli.js --plugin=mozjpeg build/images/*.jpg --out-dir=build/images",
     "optimize:png": "node node_modules/imagemin-cli/cli.js --plugin=optipng build/images/*.png --out-dir=build/images",

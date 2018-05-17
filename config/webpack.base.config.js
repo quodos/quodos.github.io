@@ -9,6 +9,7 @@ const ExtractSASS = new ExtractTextPlugin('css/[hash].app.css');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin');
 const generateHtmlPlugins = require('../helpers/generateHtmlPlugins');
@@ -129,7 +130,11 @@ module.exports = (options) => {
 
   } else {
     webpackConfig.plugins.push(
-      new Webpack.HotModuleReplacementPlugin()
+      new Webpack.HotModuleReplacementPlugin(),
+      new HtmlWebpackPlugin({
+        template : 'src/index.html',
+        favicon  : 'favicon.ico',
+      }),
     );
 
     webpackConfig.module.rules.push({
@@ -142,7 +147,7 @@ module.exports = (options) => {
     });
 
     webpackConfig.devServer = {
-      contentBase : path.resolve(__dirname, '../build'),
+      contentBase : path.resolve(__dirname, '../src'),
       hot         : true,
       port        : options.port,
       inline      : true,

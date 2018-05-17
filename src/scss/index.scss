@@ -1,5 +1,4 @@
 @import "~normalize.css";
-
 @import "variables";
 
 * {
@@ -119,7 +118,7 @@ a {
 
 .navigation {
   &__element {
-    color: rgba($text-base-color, 0.56);
+    color: rgba($text-base-color, 0.54);
     font-size: 1.3rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -150,7 +149,10 @@ a {
 }
 
 .footer {
-  margin-top: 50px;
+  padding-top: 50px;
+  color: rgba($text-base-color, 0.54);
+  font-size: 1.3rem;
+  text-transform: uppercase;
 
   .container {
     display: flex;

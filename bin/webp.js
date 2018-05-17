@@ -10,7 +10,7 @@ const spinner = ora('Converting images to webp... 🖼\n');
 spinner.color = 'green';
 spinner.start();
 
-imagemin([path.resolve(__dirname, '../dist/images/*.{jpg,png}')], path.resolve(__dirname, '../dist/images'), {
+imagemin([path.resolve(__dirname, '../build/images/*.{jpg,png}')], path.resolve(__dirname, '../build/images'), {
   use: [
     imageminWebp(),
   ]

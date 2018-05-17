@@ -118,6 +118,7 @@ module.exports = (options) => {
       new WebpackShellPlugin({
         onBuildEnd: [
           'node bin/webp.js',
+          'git add src/*',
         ],
       }),
     );

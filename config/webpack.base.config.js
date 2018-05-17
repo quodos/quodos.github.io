@@ -12,7 +12,9 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const ImageminWebp = require('imagemin-webp');
 const WebpackShellPlugin = require('webpack-shell-plugin');
-// const generateHtmlPlugins = require('../helpers/generateHtmlPlugins');
+const generateHtmlPlugins = require('../helpers/generateHtmlPlugins');
+
+const HtmlPlugins = generateHtmlPlugins('../src');
 
 module.exports = (options) => {
   const dest = path.join(__dirname, '../build');
@@ -39,16 +41,16 @@ module.exports = (options) => {
       ], {
         root: path.resolve(__dirname, '../'),
       }),
-      new HtmlWebpackPlugin({
-        template : './src/index.html',
-        filename : '../index.html',
-        favicon  : 'favicon.ico',
-        minify   : {
-          removeComments        : true,
-          collapseWhitespace    : true,
-          removeAttributeQuotes : true
-        },
-      }),
+      // new HtmlWebpackPlugin({
+      //   template : './src/index.html',
+      //   filename : '../index.html',
+      //   favicon  : 'favicon.ico',
+      //   minify   : {
+      //     removeComments        : true,
+      //     collapseWhitespace    : true,
+      //     removeAttributeQuotes : true
+      //   },
+      // }),
       new CopyWebpackPlugin([
         {
           test : /\.(jpe?g|png)$/i,
@@ -65,7 +67,7 @@ module.exports = (options) => {
           })
         ]
       }),
-    ],
+    ].concat(HtmlPlugins),
     module: {
       rules: [{
         test: /\.js$/,

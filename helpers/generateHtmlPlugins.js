@@ -11,7 +11,7 @@ const generateHtmlPlugins = (templatesDirectory, templateExtensions = ['html']) 
     const extension = parts[1];
 
     if (!templateExtensions.includes(extension)) {
-      return;
+      return () => {};
     }
 
     return new HTMLWebpackPlugin({

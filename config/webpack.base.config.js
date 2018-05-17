@@ -1,16 +1,15 @@
+/* eslint-env node */
+
 'use strict';
 
 const path = require('path');
 const Webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ExtractSASS = new ExtractTextPlugin('css/[hash].app.css');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const ImageminWebp = require('imagemin-webp');
 const WebpackShellPlugin = require('webpack-shell-plugin');
 const generateHtmlPlugins = require('../helpers/generateHtmlPlugins');
 
@@ -36,7 +35,8 @@ module.exports = (options) => {
         }
       }),
       new CleanWebpackPlugin([
-        path.resolve(__dirname, '../build'),
+        path.resolve(__dirname, '../build/css'),
+        path.resolve(__dirname, '../build/js'),
         path.resolve(__dirname, '../*.html'),
       ], {
         root: path.resolve(__dirname, '../'),
@@ -58,15 +58,15 @@ module.exports = (options) => {
           to   : 'images',
         }
       ]),
-      new ImageminPlugin({
-        disable : options.mode !== 'production', // Disable during development
-        test    : 'images/*.{jpg,png}',
-        plugins : [
-          ImageminWebp({
-            lossless: true,
-          })
-        ]
-      }),
+      // new ImageminPlugin({
+      //   disable : options.mode !== 'production', // Disable during development
+      //   test    : 'images/*.{jpg,png}',
+      //   plugins : [
+      //     ImageminWebp({
+      //       lossless: true,
+      //     })
+      //   ]
+      // }),
     ].concat(HtmlPlugins),
     module: {
       rules: [{
@@ -91,7 +91,7 @@ module.exports = (options) => {
         }
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|webp)$/i,
         use: [
           {
             loader  : 'file-loader',
@@ -117,8 +117,7 @@ module.exports = (options) => {
     webpackConfig.plugins.push(
       new WebpackShellPlugin({
         onBuildEnd: [
-          'node bin/webp.js',
-          'git add src/*',
+          'git add build/*',
         ],
       }),
     );
@@ -143,7 +142,7 @@ module.exports = (options) => {
     });
 
     webpackConfig.devServer = {
-      contentBase : path.resolve(__dirname, '../'),
+      contentBase : path.resolve(__dirname, '../build'),
       hot         : true,
       port        : options.port,
       inline      : true,
@@ -151,5 +150,4 @@ module.exports = (options) => {
   }
 
   return webpackConfig;
-
 };

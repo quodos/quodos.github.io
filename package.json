@@ -6,29 +6,8 @@
     "type": "git",
     "url": "git+https://github.com/quodos/quodos.github.io.git"
   },
-  "keywords": [
-    "webpack",
-    "startkit",
-    "frontend",
-    "es6",
-    "javascript",
-    "webdev"
-  ],
   "author": "Thomas Wilhelm",
   "license": "MIT",
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "node": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 6,
-      "sourceType": "module"
-    },
-    "rules": {
-      "semi": 2
-    }
-  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
@@ -38,15 +17,24 @@
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.10",
     "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
     "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.11.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "filesize": "^3.6.1",
     "fs": "^0.0.1-security",
     "html-webpack-plugin": "^3.0.6",
     "imagemin": "^5.3.1",
+    "imagemin-cli": "^3.0.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-pngquant": "^5.1.0",
+    "imagemin-svgo": "^6.0.0",
     "imagemin-webp": "^4.1.0",
     "imagemin-webpack-plugin": "^2.1.5",
+    "imagemin-zopfli": "^5.1.0",
     "node-sass": "^4.8.2",
     "normalize.css": "^8.0.0",
     "ora": "^2.1.0",
@@ -63,6 +51,15 @@
   },
   "scripts": {
     "build": "webpack --config config/webpack.prod.config.js --colors --progress",
+    "build:images": "yarn copy:images && yarn optimize:jpg && yarn optimize:png && yarn optimize:svg && yarn webp",
+    "copy:images": "cp -a src/images/. build/images/",
+    "webp": "yarn webp:clean && yarn webp:convert  && yarn webp:git-add",
+    "webp:clean": "rm -rf build/images/*.webp",
+    "webp:convert": "node node_modules/imagemin-cli/cli.js --plugin=webp build/images/* --out-dir=build/images",
+    "webp:git-add": "git add build/images/*.webp",
+    "optimize:jpg": "node node_modules/imagemin-cli/cli.js --plugin=mozjpeg build/images/*.jpg --out-dir=build/images",
+    "optimize:png": "node node_modules/imagemin-cli/cli.js --plugin=optipng build/images/*.png --out-dir=build/images",
+    "optimize:svg": "node node_modules/imagemin-cli/cli.js --plugin=svgo build/images/*.svg --out-dir=build/images",
     "dev": "webpack-dev-server --open --config config/webpack.dev.config.js --watch --colors"
   }
 }

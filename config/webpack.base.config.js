@@ -12,9 +12,10 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const ImageminWebp = require('imagemin-webp');
 const WebpackShellPlugin = require('webpack-shell-plugin');
+// const generateHtmlPlugins = require('../helpers/generateHtmlPlugins');
 
 module.exports = (options) => {
-  const dest = path.join(__dirname, '../dist');
+  const dest = path.join(__dirname, '../build');
 
   let webpackConfig = {
     mode: options.mode,
@@ -33,7 +34,8 @@ module.exports = (options) => {
         }
       }),
       new CleanWebpackPlugin([
-        path.resolve(__dirname, '../dist'),
+        path.resolve(__dirname, '../build'),
+        path.resolve(__dirname, '../*.html'),
       ], {
         root: path.resolve(__dirname, '../'),
       }),

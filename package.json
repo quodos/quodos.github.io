@@ -19,7 +19,7 @@
     "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-loader": "^2.0.0",
-    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-import": "^2.12.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "filesize": "^3.6.1",
@@ -37,6 +37,8 @@
     "imagemin-zopfli": "^5.1.0",
     "node-sass": "^4.8.2",
     "normalize.css": "^8.0.0",
+    "nsp": "^3.2.1",
+    "nsp-preprocessor-yarn": "^1.1.2",
     "ora": "^2.1.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
@@ -50,7 +52,7 @@
     "babel-polyfill": "^6.9.0"
   },
   "scripts": {
-    "build": "webpack --config config/webpack.prod.config.js --colors --progress",
+    "build": "webpack --config config/webpack.prod.config.js --colors --progress && yarn audit",
     "build:images": "yarn copy:images && yarn optimize:jpg && yarn optimize:png && yarn optimize:svg && yarn webp",
     "copy:images": "cp -a src/images/. build/images/",
     "webp": "yarn webp:clean && yarn webp:convert  && yarn webp:git-add",
@@ -60,6 +62,7 @@
     "optimize:jpg": "node node_modules/imagemin-cli/cli.js --plugin=mozjpeg build/images/*.jpg --out-dir=build/images",
     "optimize:png": "node node_modules/imagemin-cli/cli.js --plugin=optipng build/images/*.png --out-dir=build/images",
     "optimize:svg": "node node_modules/imagemin-cli/cli.js --plugin=svgo build/images/*.svg --out-dir=build/images",
-    "dev": "webpack-dev-server --open --config config/webpack.dev.config.js --watch --colors"
+    "dev": "webpack-dev-server --open --config config/webpack.dev.config.js --watch --colors",
+    "audit": "nsp check --preprocessor yarn --reporter table"
   }
 }

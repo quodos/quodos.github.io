@@ -64,5 +64,9 @@
     "optimize:svg": "node node_modules/imagemin-cli/cli.js --plugin=svgo build/images/*.svg --out-dir=build/images",
     "dev": "webpack-dev-server --open --config config/webpack.dev.config.js --watch --colors",
     "audit": "nsp check --preprocessor yarn --reporter table"
-  }
+  },
+  "pre-commit": [
+    "yarn build:images",
+    "yarn build"
+  ]
 }

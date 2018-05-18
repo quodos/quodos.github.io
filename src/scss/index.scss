@@ -148,13 +148,14 @@ a {
   padding: 120px 0;
 
   &__title {
+    max-width: 360px;
     font-size: 45px;
     font-weight: 300;
     line-height: 53px;
   }
 
   &__introduction {
-    max-width: 320px;
+    max-width: 360px;
     font-size: 1.8rem;
     line-height: 26px;
   }

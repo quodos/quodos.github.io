@@ -141,6 +141,11 @@ a {
     &:not(:first-child) {
       margin-left: 35px;
     }
+
+    &,
+    &:hover {
+      box-shadow: none;
+    }
   }
 }
 

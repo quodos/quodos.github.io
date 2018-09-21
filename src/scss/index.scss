@@ -163,6 +163,10 @@ a {
     max-width: 360px;
     font-size: 1.8rem;
     line-height: 26px;
+
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
   }
 }
 

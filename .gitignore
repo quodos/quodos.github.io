@@ -4,3 +4,5 @@ node_modules
 .npm
 npm-debug.log*
 quodos.github.io.iml
+.idea
+.idea/*

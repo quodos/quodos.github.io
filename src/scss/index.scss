@@ -2,6 +2,8 @@
 @import "variables";
 @import "projects";
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   background-color: $background-color;
   color: $text-base-color;

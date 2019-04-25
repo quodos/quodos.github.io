@@ -52,7 +52,7 @@
     "babel-polyfill": "^6.9.0"
   },
   "scripts": {
-    "build": "webpack --config config/webpack.prod.config.js --colors --progress && yarn audit",
+    "build": "webpack --config config/webpack.prod.config.js --colors --progress",
     "build:images": "yarn copy:images && yarn optimize:jpg && yarn optimize:png && yarn optimize:svg && yarn webp",
     "copy:images": "cp -a src/images/. build/images/",
     "webp": "yarn webp:clean && yarn webp:convert  && yarn webp:git-add",

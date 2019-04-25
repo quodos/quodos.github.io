@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9be4cc6-c894-4941-9998-dcfa95b70cbe" name="Default" comment="added roboto as font for non-mac machines">
+      <change afterPath="$PROJECT_DIR$/build/css/d9f61f6f8326af1dca37.app.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/js/d9f61f6f8326af1dca37.app.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/5be555b4d432a338f060.app.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/d9f61f6f8326af1dca37.app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/5be555b4d432a338f060.app.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/5be555b4d432a338f060.app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/d9f61f6f8326af1dca37.app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/5be555b4d432a338f060.app.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,57 +21,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1783536721">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="gitignore" value="26" />
-          <entry key="html" value="111" />
-          <entry key="scss" value="60" />
-          <entry key="txt" value="83" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="111" />
-          <entry key="PLAIN_TEXT" value="109" />
-          <entry key="SCSS" value="60" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="gitignore" value="3" />
-          <entry key="html" value="5" />
-          <entry key="scss" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="5" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="SCSS" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.php.composer.actions" />
-      <usages-collector id="statistics.php.composer.command.options" />
-      <usages-collector id="statistics.php.new.test" />
-      <usages-collector id="statistics.php.new.class" />
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.php.rename.constructor" />
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scss/index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1512">
+              <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="54" column="80" lean-forward="true" selection-start-line="54" selection-start-column="80" selection-end-line="54" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -123,7 +103,6 @@
         <option value="$PROJECT_DIR$/config/webpack.prod.config.js" />
         <option value="$PROJECT_DIR$/src/scss/_base.scss" />
         <option value="$PROJECT_DIR$/run/webp.js" />
-        <option value="$PROJECT_DIR$/src/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/healpers/generateHtmlPlugins.js" />
         <option value="$PROJECT_DIR$/helpers/generateHtmlPlugins.js" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
@@ -131,11 +110,12 @@
         <option value="$PROJECT_DIR$/config/webpack.base.config.js" />
         <option value="$PROJECT_DIR$/bin/webp.js" />
         <option value="$PROJECT_DIR$/src/scss/_projects.scss" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/imprint.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/src/scss/index.scss" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -144,25 +124,11 @@
     <bower-package value="" />
     <bower.json value="" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>false</service-enabled>
     <exe-path>$PROJECT_DIR$/node_modules/flow-bin</exe-path>
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpServers">
     <servers />
@@ -198,12 +164,6 @@
             <path>
               <item name="quodos.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="quodos.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quodos.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quodos.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -226,8 +186,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
@@ -344,6 +306,7 @@
       <workItem from="1537766396636" duration="21000" />
       <workItem from="1537779874008" duration="186000" />
       <workItem from="1537790469902" duration="17000" />
+      <workItem from="1556189453508" duration="488000" />
     </task>
     <task id="LOCAL-00001" summary="reboot">
       <created>1526376950994</created>
@@ -538,12 +501,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35606000" />
+    <option name="totallyTimeSpent" value="36094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="-390" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16693164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15925337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -578,9 +542,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reboot" />
     <MESSAGE value="better webp script" />
@@ -614,38 +575,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/clean-webpack-plugin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/imagemin-webp/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/imagemin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/clean-webpack-plugin/index.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/imagemin-webp/index.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/imagemin/index.js" />
     <entry file="file://$PROJECT_DIR$/src/scss/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="22" column="3" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -685,13 +621,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/html-webpack-plugin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="728" column="13" selection-start-line="728" selection-start-column="7" selection-end-line="728" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/html-webpack-plugin/index.js" />
     <entry file="file://$PROJECT_DIR$/bin/webp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
@@ -703,13 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
           <caret line="137" column="6" lean-forward="true" selection-start-line="137" selection-start-column="6" selection-end-line="137" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="70" column="3" selection-start-line="70" selection-start-column="3" selection-end-line="70" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -749,10 +672,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="1512">
+          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="54" column="80" lean-forward="true" selection-start-line="54" selection-start-column="80" selection-end-line="54" selection-end-column="80" />
         </state>
       </provider>
     </entry>
